@@ -1,0 +1,14 @@
+#include "iostream"
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    string s;
+    ifstream f("0.txt");
+    while(f >> s){
+        cout << s << ' ';
+    }
+    f.close();
+    return 0;
+}
