@@ -1,0 +1,14 @@
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+    ofstream f("0.txt");
+    string s;
+    cout<<"введите строку"<<"\n";
+    cin>>s;
+    f<<s;
+    f.close();
+    return 0;
+}
