@@ -1,0 +1,13 @@
+#include <fstream>
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    setlocale(LC_ALL, "rus");
+    string s;
+    ifstream f("0.txt");
+    f.seekg(0,ios_base::end);
+    cout << "Размер файла (в байтах): " << f.tellg();
+    return 0;
+}
