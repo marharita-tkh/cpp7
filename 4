@@ -1,0 +1,12 @@
+int main(){
+    ifstream f("0.txt");
+    string s;
+    while (!f.eof())
+    {
+        f>>s;
+        cout<<s<<' ';
+    }
+    cout<<endl;
+    f.close();
+    return 0;
+}
